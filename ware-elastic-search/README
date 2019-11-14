@@ -2,4 +2,13 @@ sudo docker pull bachue/elasticsearch-ik:6.2.4
 sudo docker run --name es6   -p9300:9300 -p 9200:9200 -d bachue/elasticsearch-ik:6.2.4
 
 
+修改: /etc/sysctl.conf 在文档尾追加
+
+vm.max_map_count=655360
+执行命令:
+
+sysctl ‐p
+
+
+
 
